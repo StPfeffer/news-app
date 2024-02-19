@@ -66,4 +66,33 @@ dependencies {
     androidTestImplementation("androidx.compose.ui:ui-test-junit4")
     debugImplementation("androidx.compose.ui:ui-tooling")
     debugImplementation("androidx.compose.ui:ui-test-manifest")
+
+    implementation("androidx.core:core-splashscreen:1.0.1")
+
+    val navVersion = "2.7.7"
+    implementation("androidx.navigation:navigation-compose:$navVersion")
+
+    implementation("com.google.dagger:hilt-android:2.48")
+    // kapt("com.google.dagger:hilt-compiler:2.45")
+    implementation("androidx.hilt:hilt-navigation-compose:1.1.0")
+
+    implementation("com.squareup.retrofit2:retrofit:2.9.0")
+    implementation("com.squareup.retrofit2:converter-gson:2.9.0")
+
+    implementation("io.coil-kt:coil-compose:2.4.0")
+
+    implementation("androidx.datastore:datastore-preferences:1.0.0")
+
+    implementation("androidx.compose.foundation:foundation:1.6.1")
+
+    implementation("com.google.accompanist:accompanist-systemuicontroller:0.31.4-beta")
+
+    val pagingVersion = "3.2.1"
+    implementation("androidx.paging:paging-runtime-ktx:$pagingVersion")
+    implementation("androidx.paging:paging-compose:3.2.1")
+
+    val roomVersion = "2.6.1"
+    implementation("androidx.room:room-runtime:$roomVersion")
+    // kapt("androidx.room:room-compiler:$room_version")
+    implementation("androidx.room:room-ktx:$roomVersion")
 }
