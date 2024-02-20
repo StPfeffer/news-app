@@ -3,6 +3,9 @@ package com.pfeffer.newsapp
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import androidx.compose.foundation.background
+import androidx.compose.foundation.layout.Box
+import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
@@ -15,7 +18,9 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             NewsAppTheme {
-                OnBoardingScreen()
+                Box(modifier = Modifier.background(color = MaterialTheme.colorScheme.background)) {
+                    OnBoardingScreen()
+                }
             }
         }
     }
